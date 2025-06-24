@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Ecommerce Website Template</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>085 606 213 825</span>
+            <span>Hubungi Kami</span>
+          </div>
+          <p class="header__alert-news">
+            Lebih Hemat - Gunakan Kupon Belanja
+          </p>
+          <a href="login-register.html" class="header__top-action">
+            Masuk / Daftar
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/agri_logo2.png"
+            alt="website logo"
+            height="90  "
+            width="Auto"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Halaman</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link active-link">Toko</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">Akunku</a>
+            <!-- </li>
+            <li class="nav__item">
+              <a href="compare.html" class="nav__link">Komparasi</a>
+            </li> -->
+            <li class="nav__item">
+              <a href="login-register.html" class="nav__link">Masuk</a>
+            </li>
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Cari Item..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Halaman</a></li>
+          <li><span class="breadcrumb__link"></span>></li>
+          <li><span class="breadcrumb__link">Toko</span></li>
+        </ul>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products container section--lg">
+        <p class="total__products">Kami menemukan <span>8</span> item untukmu!</p>
+        <div class="products__container grid">
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-13-ubiUngu.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-13-ubiUngu.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-blue">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Tanaman Pangan</span>
+              <a href="details.html">
+                <h3 class="product__title">Ubi Cilembu</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.25.000,00</span>
+                <span class="old__price">Rp.30.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-14-tomat.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-14-tomat.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-blue">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Hultikultura</span>
+              <a href="details.html">
+                <h3 class="product__title">Tomat Tengger</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.10.000,00</span>
+                <span class="old__price">Rp.15.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-15-kakao.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-15-kakao.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Perkebunan</span>
+              <a href="details.html">
+                <h3 class="product__title">Kakao Lumajang</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.20.000,00</span>
+                <span class="old__price">Rp.25.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-16-dagingAyam.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-16-dagingAyam.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Peternakan</span>
+              <a href="details.html">
+                <h3 class="product__title">Daging Ayam</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.25.000,00</span>
+                <span class="old__price">Rp.30.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab__item" content id="new-added">
+        <div class="products__container grid">
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-17-udang.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-17-udang.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-pink">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Perikanan</span>
+              <a href="details.html">
+                <h3 class="product__title">Udang Jember</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.30.000,00</span>
+                <span class="old__price">Rp.35.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-18-rotan.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-18-rotan.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Kehutanan</span>
+              <a href="details.html">
+                <h3 class="product__title">Rotan Semeru</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.40.000,00</span>
+                <span class="old__price">Rp.45.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-19-keju.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-19-keju.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-orange">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Hasil Olah</span>
+              <a href="details.html">
+                <h3 class="product__title">Keju Ngawi</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.20.000,00</span>
+                <span class="old__price">Rp.25.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-20-selep.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-20-selep.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-blue">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Alat Produksi</span>
+              <a href="details.html">
+                <h3 class="product__title">Penggiling Beras</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.7.000.000,00</span>
+                <span class="old__price">Rp.7.000.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-21-pala.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-21-pala.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-blue">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Kehutanan</span>
+              <a href="details.html">
+                <h3 class="product__title">Pala Sumatra</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.50.000,00</span>
+                <span class="old__price">Rp.55.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-22-kentang.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-22-kentang.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-blue">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Hultikultura</span>
+              <a href="details.html">
+                <h3 class="product__title">Kentang Tengger</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.15.000,00</span>
+                <span class="old__price">Rp.20.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__banner">
+              <a href="details.html" class="product__images">
+                <img
+                  src="assets/img/produk-23-kambing.png"
+                  alt=""
+                  class="product__img default"
+                />
+                <img
+                  src="assets/img/produk-23-kambing.png"
+                  alt=""
+                  class="product__img hover"
+                />
+              </a>
+              <div class="product__actions">
+                <a href="#" class="action__btn" aria-label="Tampilkan">
+                  <i class="fi fi-rs-eye"></i>
+                </a>
+                <a
+                  href="#"
+                  class="action__btn"
+                  aria-label="Masukkan Favorit"
+                >
+                  <i class="fi fi-rs-heart"></i>
+                </a>
+                <a href="#" class="action__btn" aria-label="Bandingkan">
+                  <i class="fi fi-rs-shuffle"></i>
+                </a>
+              </div>
+              <div class="product__badge light-green">Laris</div>
+            </div>
+            <div class="product__content">
+              <span class="product__category">Peternakan</span>
+              <a href="details.html">
+                <h3 class="product__title">Kambing Senduro</h3>
+              </a>
+              <div class="product__rating">
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+                <i class="fi fi-rs-star"></i>
+              </div>
+              <div class="product__price flex">
+                <span class="new__price">Rp.3.250.000,00</span>
+                <span class="old__price">Rp.3.300.000,00</span>
+              </div>
+              <a
+                href="#"
+                class="action__btn cart__btn"
+                aria-label="Masukkan Keranjang"
+              >
+                <i class="fi fi-rs-shopping-bag-add"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <ul class="pagination">
+          <li><a href="#" class="pagination__link active">01</a></li>
+          <li><a href="#" class="pagination__link">02</a></li>
+          <li><a href="#" class="pagination__link">03</a></li>
+          <li><a href="#" class="pagination__link">...</a></li>
+          <li><a href="#" class="pagination__link">16</a></li>
+          <li><a href="#" class="pagination__link icon">
+            <i class="fi-rs-angle-double-small-right"></i>
+          </a></li>
+        </ul>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home__newsletter">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="./assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />
+            Masuk untuk kirim pesan
+          </h3>
+          <p class="newsletter__description">
+            ...dan dapatkan diskon belanja 25%.
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Masukkan Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Langganan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/agri_logo2.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Kontak</h4>
+          <p class="footer__description">
+            <span>Alamat:</span> Kecamatan Senduro, Kabupaten Lumajang, Jawa Timur
+          </p>
+          <p class="footer__description">
+            <span>Telpon:</span> 085 606 213 825
+          </p>
+          <p class="footer__description">
+            <span>Buka:</span> 10:00 - 18:00, Senin - Sabtu
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Ikuti</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Alamat</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Tentang Kami</a></li>
+            <li><a href="#" class="footer__link">Informasi Pengantaran</a></li>
+            <li><a href="#" class="footer__link">Privasi dan Ketentuan</a></li>
+            <li><a href="#" class="footer__link">Hubungi Kami</a></li>
+            <li><a href="#" class="footer__link">Call Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Akun Saya</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Masuk</a></li>
+            <li><a href="#" class="footer__link">Lihat Keranjang</a></li>
+            <li><a href="#" class="footer__link">Favoritku</a></li>
+            <li><a href="#" class="footer__link">Lacak Orderan</a></li>
+            <li><a href="#" class="footer__link">Bantuan</a></li>
+            <li><a href="#" class="footer__link">Pesanan</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Pembayaran</h3>
+          <img
+            src="./assets/img/pembayaran.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Reverensi: </p>
+        <p class="copyright">&copy; 2024 Evara. All right reserved</p>
+        <span class="designer">Designer by Crypticalcoder</span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

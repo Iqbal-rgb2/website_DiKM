@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <title>Ecommerce Website template</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>085 606 213 825</span>
+            <span>Hubungi Kami</span>
+          </div>
+          <p class="header__alert-news">
+            Lebih Hemat - Gunakan Kupon Belanja
+          </p>
+          <a href="login-register.html" class="header__top-action">
+            Daftar / Masuk
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/agri_logo2.png"
+            alt="website logo"
+            height="90"
+            width="Auto"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Halaman</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Toko</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">Akunku</a>
+            </li>
+            <!-- <li class="nav__item">
+              <a href="compare.html" class="nav__link">Compare</a>
+            </li> -->
+            <li class="nav__item">
+              <a href="login-register.html" class="nav__link active-link"
+                >Masuk</a
+              >
+            </li>
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Cari Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Halaman</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Masuk / Daftar</span></li>
+        </ul>
+      </section>
+
+      <!--=============== LOGIN-REGISTER ===============-->
+      <section class="login-register section--lg">
+        <div class="login-register__container container grid">
+          <div class="login">
+            <h3 class="section__title">Masuk</h3>
+            <form class="form grid">
+              <input
+                type="email"
+                placeholder="Email"
+                class="form__input"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form__input"
+              />
+              <div class="form__btn">
+                <button class="btn">Masuk</button>
+              </div>
+            </form>
+          </div>
+          <div class="register">
+            <h3 class="section__title">Buat Account</h3>
+            <form class="form grid">
+              <input
+                type="text"
+                placeholder="Username"
+                class="form__input"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                class="form__input"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form__input"
+              />
+              <input
+                type="password"
+                placeholder="Konfirmasi Password"
+                class="form__input"
+              />
+              <div class="form__btn">
+                <button class="btn">Submit & Daftar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section home__newsletter">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="./assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />
+            Masuk untuk kirim pesan
+          </h3>
+          <p class="newsletter__description">
+            ...dan dapatkan diskon belanja 25%.
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Masukkan Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Langganan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/agri_logo2.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Kontak</h4>
+          <p class="footer__description">
+            <span>Alamat:</span> Kecamatan Senduro, Kabupaten Lumajang, Jawa Timur
+          </p>
+          <p class="footer__description">
+            <span>Telpon:</span> 085 606 213 825
+          </p>
+          <p class="footer__description">
+            <span>Buka:</span> 10:00 - 18:00, Senin - Sabtu
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Ikuti</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Alamat</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Tentang Kami</a></li>
+            <li><a href="#" class="footer__link">Informasi Pengantaran</a></li>
+            <li><a href="#" class="footer__link">Privasi dan Ketentuan</a></li>
+            <li><a href="#" class="footer__link">Hubungi Kami</a></li>
+            <li><a href="#" class="footer__link">Call Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Akun Saya</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Masuk</a></li>
+            <li><a href="#" class="footer__link">Lihat Keranjang</a></li>
+            <li><a href="#" class="footer__link">Favoritku</a></li>
+            <li><a href="#" class="footer__link">Lacak Orderan</a></li>
+            <li><a href="#" class="footer__link">Bantuan</a></li>
+            <li><a href="#" class="footer__link">Pesanan</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Pembayaran</h3>
+          <img
+            src="./assets/img/pembayaran.png"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Reverensi: </p>
+        <p class="copyright">&copy; 2024 Evara. All right reserved</p>
+        <span class="designer">Designer by Crypticalcoder</span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
